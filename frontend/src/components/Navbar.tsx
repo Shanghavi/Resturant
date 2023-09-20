@@ -34,7 +34,7 @@ const Navbar = () => {
       navText = 'View Our Menu'; 
       break;
     case '/about':
-      backgroundStyle.backgroundImage = 'url(/contact.png)';
+      backgroundStyle.backgroundImage = 'url(/about.png)';
       navText = 'Who We Are'; 
       break;
     case '/contact':
@@ -67,22 +67,22 @@ const { backgroundStyle, navText } = getBackgroundStyle();
       </div>
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-20 items-center justify-end flex-2 mb-15 font-['Montserrat']">
-      <Link href="/">Home</Link>
-        <Link href="/menu">Menu</Link>
-        <Link href="/about">about-us</Link>
-        <Link href="/contact">Contact-us</Link>
+      <Link href="/" className="hover:text-[#9d2d3e] font-semibold" >Home</Link>
+        <Link href="/menu" className="hover:text-[#9d2d3e] font-semibold">Menu</Link>
+        <Link href="/about" className="hover:text-[#9d2d3e] font-semibold">about-us</Link>
+        <Link href="/contact" className="hover:text-[#9d2d3e] font-semibold">Contact-us</Link>
         <CartIcon />
         {!user ? (
-          <Link href="/login">Login</Link>
+          <Link href="/login" className="hover:text-[#9d2d3e] font-semibold">Login</Link>
         ) : (
-          <Link href="/profile">Profile</Link>
+          <Link href="/profile" className="hover:text-[#9d2d3e] font-semibold">Profile</Link>
         )}
       </div>
       <div >
         </div>
         </div>
         {!isHomePage&&
-        <div className=" pt-20 text-white text-[60px] font-['Rufina'] font-semibold  ml-5 " >
+        <div className=" pt-20 text-white text-[60px] font-['Rufina'] font-semibold  ml-5 pb-10" >
         {navText}
         </div>
 }

@@ -1,5 +1,5 @@
-import ContactForm from '@/components/ContactForm'
-import Info from '@/components/Info'
+import ContactForm from '@/components/Contact/ContactForm'
+import Info from '@/components/Contact/Info'
 import React from 'react'
 import RootLayout from '../RootLayout'
 

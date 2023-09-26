@@ -1,4 +1,4 @@
-import Story from '@/components/Story'
+import Story from '@/components/About/Story'
 import React from 'react'
 import RootLayout from '../RootLayout'
 

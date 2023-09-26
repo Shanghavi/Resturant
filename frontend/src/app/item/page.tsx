@@ -1,6 +1,6 @@
 import React from 'react'
 import EmptyLayout from '../EmptyLayout'
-import ItemForm from '@/components/ItemForm'
+import ItemForm from '@/components/Admin/ItemForm'
 
 const ItemPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import EmptyLayout from '../EmptyLayout'
-import FeedBack from '@/components/FeedBack'
+import FeedBack from '@/components/Admin/FeedBack'
 
 const FeedbackPage = () => {
   return (

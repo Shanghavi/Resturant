@@ -158,8 +158,8 @@ import Link from "next/link";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'; // Only importing usePathname
-import LogInForm from "./LogInForm";
-import LoginFormModal from "./LogInFormModal";
+import LogInForm from "./Auth/LogInForm";
+import LoginFormModal from "./Auth/LogInFormModal";
 
 const Navbar = () => {
   const [isLoginFormOpen, setIsLoginFormOpen] = useState(false);

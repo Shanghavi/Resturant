@@ -1,5 +1,5 @@
 
-import LoginFormModal from '@/components/LogInFormModal'
+import LoginFormModal from '@/components/Auth/LogInFormModal'
 import React from 'react'
 import RootLayout from '../RootLayout'
 

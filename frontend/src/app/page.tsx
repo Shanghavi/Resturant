@@ -1,6 +1,6 @@
-import Chef from '@/components/Chef'
-import Feature from '@/components/Feature'
-import Header from '@/components/Header'
+import Chef from '@/components/Home/Chef'
+import Feature from '@/components/Home/Feature'
+import Header from '@/components/Home/Header'
 import RootLayout from './RootLayout'
 
 

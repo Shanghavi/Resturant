@@ -1,6 +1,6 @@
 import React from 'react'
 import EmptyLayout from '../EmptyLayout'
-import OrderTable from '@/components/OrderTable'
+import OrderTable from '@/components/Admin/OrderTable'
 
 const OrderPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import EmptyLayout from '../EmptyLayout'
-import AdminNavbar from '@/components/AdminNavbar'
+import AdminNavbar from '@/components/Admin/AdminNavbar'
 
 const AdminPage = () => {
   return (

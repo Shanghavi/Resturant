@@ -1,4 +1,4 @@
-import SignUpFormModal from '@/components/SignUpFormModel'
+import SignUpFormModal from '@/components/Auth/SignUpFormModel'
 import React from 'react'
 import RootLayout from '../RootLayout'
 

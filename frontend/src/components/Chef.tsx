@@ -21,18 +21,12 @@ const Chef = () => {
       Excellent cook
       </h1>
       <div className="text-neutral-600 text-base md:text-lg font-normal font-['Lato'] leading-[1.4] tracking-wide  text-left">
-        {/* Your story content goes here */}
+    
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. 
         Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Purus lorem id penatibus imperdiet.
       </div>
-      <Image
-        src={"/leaf.png"}
-        alt="Your Alt Text"
-        width={495}
-        height={430}
-        className="w-[150px] ml-[580px]"
-      />
+    
     </div>
    
   </div>

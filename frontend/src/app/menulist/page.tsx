@@ -1,15 +1,16 @@
 import React from 'react'
 import EmptyLayout from '../EmptyLayout'
-import OrderTable from '@/components/OrderTable'
+import MenuTable from '@/components/MenuTable'
 
-const OrderPage = () => {
+
+const MenuList = () => {
   return (
     <EmptyLayout>
     <div>
-      <OrderTable />
+    <MenuTable/>
     </div>
     </EmptyLayout>
   )
 }
 
-export default OrderPage
+export default MenuList

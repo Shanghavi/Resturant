@@ -13,7 +13,7 @@ const Story = () => {
       Our Story
     </h1>
     <div className="text-neutral-600 text-base md:text-lg font-normal font-['Lato'] leading-[1.4] tracking-wide  text-left">
-      {/* Your story content goes here */}
+      {/* story content  */}
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. 
       Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit 
@@ -58,7 +58,7 @@ const Story = () => {
       </h3>
       
       <div className="text-neutral-600 text-base md:text-lg font-normal font-['Lato'] leading-[1.4] tracking-wide  text-left">
-        {/* Your story content goes here */}
+        {/* story content  */}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. 
         Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit 

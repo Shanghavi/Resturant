@@ -1,44 +1,60 @@
-import Image from 'next/image'
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
-const Feature = () => {
-  return (
-    
-    <div className="relative bg-white md:mt-10 lg:px-20">
-<div className="py-10 px-4 md:px-10 bg-gray-200">
-  <div className="mx-auto flex flex-col md:flex-row md:items-center md:gap-8">
-    <div className="md:w-1/2 mx-auto mt-6 md:mt-0">
-      <Image
-        src={"/headchef.jpg"}
-        alt="Your Alt Text"
-        width={5760}
-        height={3840}
-        className="w-full"
-      />
-    </div>
-    <div className="md:w-3/4">
-      <h1 className="text-black text-left text-[30px]  md:text-[50px] font-bold font-['lato'] leading-[1.2]  mb-3">
-      Excellent cook
-      </h1>
-      <div className="text-neutral-600 text-base md:text-lg font-normal font-['Lato'] leading-[1.4] tracking-wide  text-left">
-        {/* Your story content goes here */}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. 
-        Turpis egestas ultricies purus auctor tincidunt lacus nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Purus lorem id penatibus imperdiet.
+const Feature: React.FC = () => {
+  const Box: React.FC<{ title: string; description: string; imageUrl: string }> = ({
+    title,
+    description,
+    imageUrl,
+  }) => (
+    <div className="flex flex-col items-center justify-center space-y-6">
+      
+      {/* <div className="w-40 h-40 md:w-56 md:h-56 relative rounded-full overflow-hidden"> */}
+          <div className="w-40 h-40 md:w-46 md:h-46 relative ">
+            <div className="w-40 h-40 md:w-46 md:h-46 absolute bg-[#C4C4C4] rounded-full" >
+        <Image
+          src={imageUrl}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="p-10"
+        />
       </div>
-      <Image
-        src={"/leaf.png"}
-        alt="Your Alt Text"
-        width={495}
-        height={430}
-        className="w-[150px] ml-[580px]"
-      />
+      </div>
+      <div className="text-center text-3xl lg:text-3xl  md:text-2xl font-bold font-rufina">{title}</div>
+      <div className="text-center text-neutral-600 md:text-[18px] lg:text-xl text-xl font-normal font-lato">
+        {description}
+      </div>
     </div>
-   
-  </div>
-</div>
-</div>
-  )
-}
+  );
 
-export default Feature
+  return (
+    <div className="relative bg-white md:mt-10 lg:px-20 mt-10">
+      <div className="py-10 px-4 md:px-10 bg-gray-200">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <Box
+            title="Premium Quality"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu"
+            imageUrl="/fish.png"
+          />
+          <Box
+            title="Seasonal Vegetables"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu"
+            imageUrl="/carrot.png"
+          />
+          <Box
+            title="Fresh Fruit"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu"
+            imageUrl="/lemon.png"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Feature;
+
+
+

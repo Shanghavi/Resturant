@@ -19,8 +19,7 @@ export default function EmptyLayout({
 }) {
   return (
     <html lang="en">
-      {/* In here {children} component are pages which is render so we can add 
-      navbar and footer here so we can have it in every pages */}
+  
      
       <body className={inter.className}>
      <AdminNavbar/>

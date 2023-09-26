@@ -5,7 +5,7 @@ const Header = () => {
    return (
 
 <div className="relative ">
-  {/* IMAGE BACKGROUND */}
+
   <div
     className="w-full h-[60vh] lg:h-[80vh] md:h-[80vh]  bg-cover bg-center "
     style={{
@@ -13,7 +13,7 @@ const Header = () => {
     }}
   ></div>
 
-  {/* TEXT AND BUTTON CONTAINER */}
+
   <div className="absolute inset-0 flex flex-col items-center justify-center text-white font-bold p-8 md:p-12 lg:p-16 lg:mb-40 ">
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-[Rufina] leading-[1.2] text-center text-[#9d2d3e] mb-5">Healthy Eating is an important part of lifestyle</h1>
     <p className="text-lg md:text-2xl lg:text-3xl font-[Lato] leading-[1.5] tracking-wide text-center text-[#9d2d3e]">Lorem ipsum dolor sit amet, consecteturadipiscing elit. <br/> Neque congue arcu</p>

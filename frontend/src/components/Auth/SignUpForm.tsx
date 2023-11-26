@@ -48,7 +48,7 @@ const SignUpForm: React.FC<SignInFormProps> = ({ onClose }) => {
 
         <div className="text-center">
           <h2 className="text-4xl font-semibold text-gray-800">Create your account.</h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-700 mt-2">
             Already have an account?{" "}
          
             <button onClick={openLoginForm} className="hover:text-[#9d2d3e] font-semibold">
@@ -109,9 +109,8 @@ const SignUpForm: React.FC<SignInFormProps> = ({ onClose }) => {
               </div>
               <div className="mb-6 flex items-center">
               <div
-          className={`w-6 h-6 border border-green-500 rounded cursor-pointer relative ${
-            agree ? 'bg-green-500' : 'bg-white'
-          }`}
+          className="w-6 h-6 border border-green-500 rounded cursor-pointer relative"
+        
           onClick={toggleAgree}
         >
            {agree && (
@@ -127,7 +126,7 @@ const SignUpForm: React.FC<SignInFormProps> = ({ onClose }) => {
             </div>
             <div className="mb-2">
               <button
-                className="w-full px-6 py-2.5 text-white bg-gradient-to-r from-emerald-800 via-neutral-500 to-lime-300 rounded-lg font-semibold hover:bg-emerald-700 focus:outline-none focus:bg-emerald-700"
+                className="w-full px-6 py-2.5 text-white bg-[#93314c] rounded-lg font-semibold hover:bg-[#d27f97] focus:outline-none focus:bg-emerald-700"
                 type="submit"
               >
                Sign Up

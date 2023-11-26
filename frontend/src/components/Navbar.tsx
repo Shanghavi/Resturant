@@ -70,8 +70,8 @@ const Navbar = () => {
   const { backgroundStyle, navText } = getBackgroundStyle();
 
   return (
-    <nav style={backgroundStyle}>
-      <div className={`md:h-${isHomePage ? "20" : "80"} lg:px-28 xl:px-20`}>
+    <nav style={backgroundStyle} className="fixed top-0 w-full z-[1000]">
+      <div className={`md:h-${isHomePage ? "20" : "80"} lg:px-28 xl:px-20 `}>
         <div
           className={`text-${
             isHomePage ? "[#808080]" : "white"
@@ -86,19 +86,19 @@ const Navbar = () => {
             <Menu />
           </div>
           {/* RIGHT LINKS */}
-          <div className="hidden md:flex gap-20 items-center justify-end flex-2 mb-15 font-['Montserrat']">
-            <Link href="/" className="hover:text-[#9d2d3e] font-semibold">
+          <div className="hidden md:flex gap-20 items-center justify-end flex-2 mb-15 font-['Montserrat']   ">
+            <Link href="/" className="hover:text-[#c22853] font-semibold">
               Home
             </Link>
-            <Link href="/menu" className="hover:text-[#9d2d3e] font-semibold">
+            <Link href="/menu" className="hover:text-[#c22853] font-semibold">
               Menu
             </Link>
-            <Link href="/about" className="hover:text-[#9d2d3e] font-semibold">
+            <Link href="/about" className="hover:text-[#c22853] font-semibold">
               about-us
             </Link>
             <Link
               href="/contact"
-              className="hover:text-[#9d2d3e] font-semibold"
+              className="hover:text-[#c22853] font-semibold"
             >
               Contact-us
             </Link>
@@ -107,14 +107,14 @@ const Navbar = () => {
               // Display login popup when "Login" is clicked
               <button
                 onClick={openLoginForm}
-                className="hover:text-[#9d2d3e] font-semibold"
+                className="hover:text-[#c22853] font-semibold"
               >
                 Login
               </button>
             ) : (
               <Link
                 href="/profile"
-                className="hover:text-[#9d2d3e] font-semibold"
+                className="hover:text-[#c22853] font-semibold"
               >
                 Profile
               </Link>

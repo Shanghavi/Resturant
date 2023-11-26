@@ -1,34 +1,39 @@
-// import React from 'react'
+"use client";
+import React from "react";
+import Link from "next/link";
 
-// const AdminNavbar = () => {
-//   return (
-//     <div>AdminNavbar</div>
-//   )
-// }
+import { usePathname } from "next/navigation";
 
-// export default AdminNavbar
-
-
-// components/Sidebar.js
-
-import React from 'react';
-import Link from 'next/link';
+const links = [
+  { href: "/orders", text: "ORDERS" },
+  { href: "/menulist", text: "MENU" },
+  { href: "/feedback", text: "FEEDBACK" },
+];
 
 const AdminNavbar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="bg-[#70293D] text-white w-64 p-4 fixed h-screen overflow-y-auto">
-      <h2  className="block text-center text-white text-4xl font-medium font-barlow mb-24">Food Zero</h2>
-      <Link href="/orders" className="block text-center text-white text-2xl font-medium font-barlow mb-14">
-       ORDERS
-      </Link>
-      <Link href="/menulist" className="block text-center text-white text-2xl font-medium font-barlow mb-14">
-        MENU
-      </Link>
-      <Link href="/feedback" className="block text-center text-white text-2xl font-medium font-barlow mb-64">
-        FEEDBACK
-      </Link>
-      <Link href="/logout" className="block text-center text-white text-2xl font-medium font-barlow mb-8">
-       LOGOUT
+      <h2 className="block text-center text-white text-4xl font-medium font-barlow mb-24">
+        Food Zero
+      </h2>
+      {links.map((link, index) => (
+        <Link
+          key={index}
+          href={link.href}
+          className={`block text-center text-white text-2xl font-medium font-barlow mb-14 hover:bg-gray-500  ${
+            pathname === link.href ? "bg-gray-500" : ""
+          }`}
+        >
+          {link.text}
+        </Link>
+      ))}
+      <Link
+        href="/logout"
+        className="block text-center text-white text-2xl font-medium font-barlow mt-64 hover:bg-gray-500"
+      >
+        LOGOUT
       </Link>
     </div>
   );

@@ -43,7 +43,7 @@ const LogInForm: React.FC<LogInFormProps> = ({ onClose }) => {
 
         <div className="text-center">
           <h2 className="text-4xl font-semibold text-gray-800">Welcome back</h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-700 mt-2">
             Dont have an account?{" "}
          
             <button onClick={openSignupForm} className="hover:text-[#9d2d3e] font-semibold">
@@ -58,7 +58,7 @@ const LogInForm: React.FC<LogInFormProps> = ({ onClose }) => {
                 Email address <span className="text-orange-600">*</span>
               </label>
               <input
-                className="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:border-green-500"
+                className="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:border-[#93314c]"
                 type="email"
                 id="email"
                 placeholder="example@gmail.com"
@@ -71,7 +71,7 @@ const LogInForm: React.FC<LogInFormProps> = ({ onClose }) => {
               </label>
               <div className="relative">
                 <input
-                  className="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:border-green-500"
+                  className="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:border-[#93314c]"
                   type={passwordVisible ? "text" : "password"}
                   id="password"
                   placeholder="*************"
@@ -83,22 +83,22 @@ const LogInForm: React.FC<LogInFormProps> = ({ onClose }) => {
                   onClick={togglePasswordVisibility}
                 >
                   {passwordVisible ? (
-                <i className="fas fa-eye-slash text-gray-500 hover:text-emerald-500"></i>
+                <i className="fas fa-eye-slash text-gray-500 hover:text-[#93314c]"></i>
               ) : (
-                <i className="fas fa-eye text-gray-500 hover:text-emerald-500"></i>
+                <i className="fas fa-eye text-gray-500 hover:text-[#93314c]"></i>
               )}
                 </button>
 
               </div>
               <div className="mt-2 text-gray-700 text-base">
-                <a href="#" className="text-green-500 hover:underline">
+                <a href="#" className="text-[#b12d52] hover:underline">
                   Forgotten password?
                 </a>
               </div>
             </div>
             <div className="mb-2">
               <button
-                className="w-full px-6 py-2.5 text-white bg-gradient-to-r from-emerald-800 via-neutral-500 to-lime-300 rounded-lg font-semibold hover:bg-emerald-700 focus:outline-none focus:bg-emerald-700"
+                className="w-full px-6 py-2.5 text-white bg-[#93314c] rounded-lg font-semibold hover:bg-gray-500 focus:outline-none focus:bg-emerald-700"
                 type="submit"
               >
                 Log In

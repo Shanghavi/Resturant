@@ -5,11 +5,11 @@ const Story = () => {
   return (
 
 
-<div className="mt-20 mb-40">
+<div className="mt-96 mb-40">
 <div className="py-14 px-4 md:px-14 bg-[#f2f2f2]">
 <div className="mx-auto flex flex-col md:flex-row md:items-center md:gap-8">
   <div className="md:w-3/4 ">
-    <h1 className="text-[#9d2d3e] text-center text-[45px]  md:text-[50px] font-bold font-['lato'] leading-[1.2]  mb-3">
+    <h1 className="text-[#b12d52] text-center text-[45px]  md:text-[50px] font-bold font-['lato'] leading-[1.2]  mb-3">
       Our Story
     </h1>
     <div className="text-neutral-600 text-base md:text-lg font-normal font-['Lato'] leading-[1.4] tracking-wide  text-left">
@@ -50,10 +50,10 @@ const Story = () => {
       />
     </div>
     <div className="md:w-3/4">
-      <h1 className="text-[#9d2d3e] text-center text-[45px]  md:text-[50px] font-bold font-['lato'] leading-[1.2]  mb-3">
+      <h1 className="text-[#b12d52] text-center text-[45px]  md:text-[50px] font-bold font-['lato'] leading-[1.2]  mb-3">
       Restuarant Manager
       </h1>
-      <h3 className="text-[#9d2d3e] text-center text-[25px]  md:text-[35px] font-normal font-['Rufina'] leading-[1.2]  mb-3">
+      <h3 className="text-[#93314c] text-center text-[25px]  md:text-[35px] font-normal font-['Rufina'] leading-[1.2]  mb-3">
       Carson Hugn
       </h3>
       

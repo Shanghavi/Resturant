@@ -32,21 +32,20 @@ const Menu = () => {
         )}
       </div>
       {open && (
-        <div className="bg-[#9d2d3e] text-white absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex flex-col gap-8 items-center justify-center text-3xl z-10">
+        <div className="bg-[#93314c]  text-white absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex flex-col gap-8 items-center justify-center text-3xl z-10 hover:bg-gray-600">
           {links.map((item) => (
             <Link href={item.url} key={item.id} onClick={() => setOpen(false)}>
               {item.title}
             </Link>
           ))}
-
+          <Link href="/cart" onClick={() => setOpen(false)}>
+            <CartIcon />
+          </Link>
           <Link
             href={user ? "/profile" : "login"}
             onClick={() => setOpen(false)}
           >
             {user ? "profile" : "Login"}
-          </Link>
-          <Link href="/cart" onClick={() => setOpen(false)}>
-            <CartIcon />
           </Link>
         </div>
       )}

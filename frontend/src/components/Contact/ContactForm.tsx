@@ -32,14 +32,14 @@ const ContactForm = () => {
 
 
     // <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center mt-10 ">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto mt-20 mb-40">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto mt-96 mb-40">
     {/* Left Side: Form */}
     <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
-      <h1 className="text-3xl font-bold text-[#ad1c32] text-center mb-8">
+      <h1 className="text-3xl font-bold text-[#b12d52] text-center mb-8">
         We&apos;d love to hear your feedback.
       </h1>
       {submitted ? (
-        <div className="text-[#8b0520] text-xl font-semibold mb-6 text-center">
+        <div className="text-[#93314c] text-xl font-semibold mb-6 text-center">
           Thank you for your feedback!
         </div>
       ) : (
@@ -55,7 +55,7 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full py-2 pl-4 pr-10 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#fd4b66]"
+              className="w-full py-2 pl-4 pr-10 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#b12d52]"
               placeholder="Your name"
               required
             />
@@ -71,7 +71,7 @@ const ContactForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full py-2 pl-4 pr-10 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#fd4b66]"
+              className="w-full py-2 pl-4 pr-10 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#b12d52]"
               placeholder="Your email"
               required
             />
@@ -87,14 +87,14 @@ const ContactForm = () => {
             //   rows="4"
               value={formData.message}
               onChange={handleChange}
-              className="w-full py-2 px-4 pt-4 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#fd4b66] resize-none"
+              className="w-full py-2 px-4 pt-4 text-neutral-600 text-normal bg-white border border-black rounded-lg focus:outline-none focus:border-[#b12d52] resize-none"
               placeholder="Type your message"
               required
             ></textarea>
           </div>
 
         
-          <button className="w-full py-3 text-lg text-white bg-[#780A1D] rounded-lg font-bold hover:bg-emerald-700 focus:outline-none focus:bg-emerald-700">
+          <button className="w-full py-3 text-lg text-white bg-[#b12d52] rounded-lg font-bold hover:bg-emerald-700 focus:outline-none focus:bg-emerald-700">
             Send Message
           </button>
         </form>

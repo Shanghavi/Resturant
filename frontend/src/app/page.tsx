@@ -9,7 +9,7 @@ export default function Home() {
   return (
   <RootLayout>
    <main>
-   <div className="mt-10 mb-20">
+   <div className=" mb-20">
     <Header/>
     <Chef/>
     <Feature/>

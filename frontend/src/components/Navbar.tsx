@@ -70,7 +70,7 @@ const Navbar = () => {
   const { backgroundStyle, navText } = getBackgroundStyle();
 
   return (
-    <nav style={backgroundStyle} className="fixed top-0 w-full z-[1000]">
+    <nav style={backgroundStyle} className="top-0 w-full z-[1000]">
       <div className={`md:h-${isHomePage ? "20" : "80"} lg:px-28 xl:px-20 `}>
         <div
           className={`text-${

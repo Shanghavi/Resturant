@@ -3,9 +3,7 @@ import React from 'react'
 
 const Story = () => {
   return (
-
-
-<div className="mt-96 mb-40">
+<div className="mt-20 mb-40">
 <div className="py-14 px-4 md:px-14 bg-[#f2f2f2]">
 <div className="mx-auto flex flex-col md:flex-row md:items-center md:gap-8">
   <div className="md:w-3/4 ">

@@ -69,7 +69,7 @@ const MenuPage: React.FC = () => {
 
   return (
     <RootLayout>
-      <div className="mb-20 mt-96">
+      <div className="mb-20 mt-20">
         <div className="container mx-auto h-[65px] justify-center items-center  inline-flex">
           <Category
             categories={categories}

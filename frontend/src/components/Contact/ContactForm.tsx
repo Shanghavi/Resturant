@@ -32,7 +32,7 @@ const ContactForm = () => {
 
 
     // <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center mt-10 ">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto mt-96 mb-40">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto mt-20 mb-40">
     {/* Left Side: Form */}
     <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
       <h1 className="text-3xl font-bold text-[#b12d52] text-center mb-8">

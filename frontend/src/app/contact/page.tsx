@@ -8,8 +8,7 @@ const ContactPage = () => {
     <RootLayout>
     <div className=" mb-20">
        <ContactForm/>
-         <Info/>
-       
+         <Info/> 
      
     </div>
     </RootLayout>
